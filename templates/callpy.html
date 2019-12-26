@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function callpy(){
+                $.ajax({
+                type: "POST",
+                url: "~/hello.py",
+                data: { param: text}
+                }).done(function( o ) {
+                // do something
+                });
+            }
+        </script>
+
+    </head>
+    <body>
+        <button onclick="callpy()">callpy</button>
+    </body>
+</html>
